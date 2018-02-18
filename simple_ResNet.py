@@ -64,9 +64,8 @@ learning_rate = 0.001
 learning_rate_h = 0.00001
 num_epoch = 100
 testing_images, testing_lables = images[:test_image_num, :], label[:test_image_num, :]
-training_images, training_lables = images[test_image_num:test_image_num + training_image_num, :], label[
-                                                                                                  test_image_num:test_image_num + training_image_num,
-                                                                                                  :]
+training_images, training_lables = images[test_image_num:test_image_num + training_image_num, :], \
+                                   label[test_image_num:test_image_num + training_image_num, :]
 
 # 2. Hyper Parameters
 w1a = np.random.randn(784, 1024)
